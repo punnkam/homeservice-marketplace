@@ -7,6 +7,7 @@ import {
   UPDATE_PROFILE,
   ACCOUNT_DELETED,
   CLEAR_PROFILE,
+  GET_PROFILES,
 } from './types';
 import { asap } from 'rxjs';
 
@@ -14,6 +15,48 @@ import { asap } from 'rxjs';
 export const getCurrentProfile = () => async dispatch => {
   try {
     const res = await axios.get('/api/profile/me');
+
+    dispatch({
+      type: GET_PROFILE,
+      payload: res.data,
+    });
+  } catch (error) {
+    dispatch({
+      type: PROFILE_ERROR,
+      payload: {
+        msg: error.response.statusText,
+        status: error.response.status,
+      },
+    });
+  }
+};
+
+// Get all profiles
+export const getProfiles = () => async dispatch => {
+  dispatch({ type: CLEAR_PROFILE });
+
+  try {
+    const res = await axios.get('/api/profile');
+
+    dispatch({
+      type: GET_PROFILES,
+      payload: res.data,
+    });
+  } catch (error) {
+    dispatch({
+      type: PROFILE_ERROR,
+      payload: {
+        msg: error.response.statusText,
+        status: error.response.status,
+      },
+    });
+  }
+};
+
+// Get profile by ID
+export const getProfileById = userId => async dispatch => {
+  try {
+    const res = await axios.get(`/api/profile/user/${userId}`);
 
     dispatch({
       type: GET_PROFILE,
@@ -199,8 +242,6 @@ export const deleteAccount = () => async dispatch => {
       });
 
       dispatch(setAlert('Your account has been permanently deleted'));
-
-      dispatch(setAlert('Experience Removed', 'success'));
     } catch (error) {
       dispatch({
         type: PROFILE_ERROR,
