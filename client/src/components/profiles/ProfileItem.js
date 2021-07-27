@@ -23,7 +23,6 @@ const ProfileItem = ({
         <Link to={`profile/${_id}`} className='btn btn-primary'>
           View Profile
         </Link>
-        }
       </div>
 
       <ul>
