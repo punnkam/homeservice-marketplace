@@ -1,5 +1,7 @@
 # Marketplace for Home-Service contractors. 
 *Built with the help of Brad Traversy's Fullstack Tutorial*
+
+### Features
 - [x] Register account
 - [x] Different login view
 - [x] Provide details on company profiles (experience and contact information)
