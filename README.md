@@ -1,5 +1,5 @@
 # Marketplace for Home-Service contractors. 
-*Built with the help of Brad Traversy's Fullstack Tutorial*
+*Built with the help of Brad Traversy's Fullstack Series*
 
 ### Features
 - [x] Register account
