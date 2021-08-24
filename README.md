@@ -1,13 +1,16 @@
 # Marketplace for Home-Service contractors. 
-*Built on top of Brad Traversy's Fullstack Series*
+*Inspired by Brad Traversy's Web Dev Series*
+ 
 
 ### Features
 - [x] Register account
-- [x] Different view for logged in and non-logged in
-- [x] Provide details on company profiles (experience and contact information)
-- [x] Customers can view a list of companies (profiles)
-- [x] Profiles can create posts and comment on each other's posts
+- [x] Different view and functions for logged in and non-logged in 
+- [x] Company Profile display (details and contact info)
+- [x] List company profiles for non-registered and registered users
+- [x] Companies create job posting 
+- [x] Homeowners interact with job postings through comments and likes
 - [ ] Post images of previous work
-- [ ] Customer sends a request for a job 
+- [ ] Customize avatar and homeowner profile
+- [ ] Homeowner able to send requests for a quote
+- [ ] Real-time chat between homeowner and companies
 
-_Working on distinguishing actions between customers and companies_
