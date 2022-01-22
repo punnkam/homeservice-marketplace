@@ -1,6 +1,8 @@
 # Marketplace for Home-Service contractors. 
-*Inspired by Brad Traversy's Web Dev Series*
- 
+
+**Why?**
+
+Back home there are limited ways to find home service contractors for various home repair/development jobs. We rely primarily on word of mouth and cannot find someone to hire on short notice. This application is built to help match homeowners and home service businesses in a forum-esque website. 
 
 ### Features
 - [x] Register account
