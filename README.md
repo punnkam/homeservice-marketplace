@@ -1,5 +1,9 @@
 # Marketplace for Home-Service contractors. 
 
+Demo: https://afternoon-caverns-07461.herokuapp.com/
+
+![Demo Gif](assets/demo.gif)
+
 ### What
 
 A home service marketplace application where businesess can showcase their business and interact with customers. Customers (homeowners) can browse and comment on businesses however they'd like. 
